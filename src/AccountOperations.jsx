@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState } from "react"
 
 function AccountOperations() {
-  const [depositAmount, setDepositAmount] = useState("");
-  const [withdrawalAmount, setWithdrawalAmount] = useState("");
-  const [loanAmount, setLoanAmount] = useState("");
-  const [loanPurpose, setLoanPurpose] = useState("");
-  const [currency, setCurrency] = useState("USD");
+  const [depositAmount, setDepositAmount] = useState("")
+  const [withdrawalAmount, setWithdrawalAmount] = useState("")
+  const [loanAmount, setLoanAmount] = useState("")
+  const [loanPurpose, setLoanPurpose] = useState("")
+  const [currency, setCurrency] = useState("USD")
 
   function handleDeposit() {}
 
@@ -19,7 +19,7 @@ function AccountOperations() {
     <div>
       <h2>Your account operations</h2>
       <div className="inputs">
-        <div>
+        <div className="flex gap-3">
           <label>Deposit</label>
           <input
             type="number"
@@ -38,7 +38,7 @@ function AccountOperations() {
           <button onClick={handleDeposit}>Deposit {depositAmount}</button>
         </div>
 
-        <div>
+        <div className="flex gap-3">
           <label>Withdraw</label>
           <input
             type="number"
@@ -50,7 +50,7 @@ function AccountOperations() {
           </button>
         </div>
 
-        <div>
+        <div className="flex gap-3">
           <label>Request loan</label>
           <input
             type="number"
@@ -72,7 +72,7 @@ function AccountOperations() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default AccountOperations;
+export default AccountOperations
