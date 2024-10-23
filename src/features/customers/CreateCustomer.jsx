@@ -16,14 +16,14 @@ function Customer() {
     <div>
       <h2>Create new customer</h2>
       <div className="inputs">
-        <div className="flex gap-2">
+        <div>
           <label>Customer full name</label>
           <input
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
           />
         </div>
-        <div className="flex gap-2">
+        <div>
           <label>National ID</label>
           <input
             value={nationalId}
