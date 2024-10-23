@@ -19,7 +19,7 @@ function AccountOperations() {
     <div>
       <h2>Your account operations</h2>
       <div className="inputs">
-        <div className="flex gap-3">
+        <div>
           <label>Deposit</label>
           <input
             type="number"
@@ -38,7 +38,7 @@ function AccountOperations() {
           <button onClick={handleDeposit}>Deposit {depositAmount}</button>
         </div>
 
-        <div className="flex gap-3">
+        <div>
           <label>Withdraw</label>
           <input
             type="number"
@@ -50,7 +50,7 @@ function AccountOperations() {
           </button>
         </div>
 
-        <div className="flex gap-3">
+        <div>
           <label>Request loan</label>
           <input
             type="number"
