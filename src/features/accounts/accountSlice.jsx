@@ -63,6 +63,12 @@ export function deposit(amount, currency) {
 
 export default accountSlice.reducer
 
+// const initialStatAccount = {
+//   balance: 0,
+//   loan: 0,
+//   loanPurpose: "",
+//   isLoading: false
+// }
 // export default function accountReducer(state = innitialStateAccount, action) {
 //   switch (action.type) {
 //     case "account/deposit":
